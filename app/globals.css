@@ -32,27 +32,26 @@ h4 {
   letter-spacing: -0.01em;
 }
 
-/* Eyebrow label with leading rule */
+/* Eyebrow label — modern pill badge (works on light and dark surfaces) */
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  font-size: 0.78rem;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(231, 127, 14, 0.25);
+  background: rgba(231, 127, 14, 0.1);
+  padding: 0.4rem 1rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-brand);
 }
 .eyebrow::before {
   content: "";
-  width: 2.5rem;
-  height: 2px;
-  background: var(--color-brand);
-}
-.eyebrow--center::after {
-  content: "";
-  width: 2.5rem;
-  height: 2px;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 9999px;
   background: var(--color-brand);
 }
 
@@ -163,6 +162,46 @@ h4 {
   60% { transform: translateY(10px); opacity: 0.4; }
 }
 .scroll-hint { animation: scroll-hint 2s ease-in-out infinite; }
+
+/* Per-character headline reveal — mirrors the official site's Slider
+   Revolution chars animation (masked swing-in, power4.inOut) */
+@keyframes char-in {
+  from {
+    transform: translateX(110%) rotate(24deg);
+  }
+  to {
+    transform: none;
+  }
+}
+.char-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.char {
+  display: inline-block;
+  animation: char-in 0.9s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .char {
+    animation: none;
+  }
+}
+
+/* Soft ambient gradient blobs for light hero/sections */
+.blob-brand,
+.blob-teal {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.blob-brand {
+  background: rgba(231, 127, 14, 0.22);
+}
+.blob-teal {
+  background: rgba(24, 140, 171, 0.18);
+}
 
 /* Subtle dot-grid texture for light sections */
 .bg-dots {

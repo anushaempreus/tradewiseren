@@ -26,12 +26,12 @@ const PROPS = [
 
 export default function ValueProps() {
   return (
-    <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="mx-auto grid max-w-7xl gap-x-0 gap-y-10 px-4 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-line">
       {PROPS.map((v, i) => (
-        <Reveal key={v.title} delay={i * 90}>
-          <div className="group h-full rounded-2xl border border-line bg-white p-8 text-center transition duration-300 hover:-translate-y-1.5 hover:border-brand/40 hover:shadow-xl">
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-brand-light transition group-hover:bg-brand/15">
-              <Image src={v.icon} alt="" width={44} height={44} className="h-11 w-11 object-contain" />
+        <Reveal key={v.title} delay={i * 90} className="lg:px-8 first:lg:pl-0 last:lg:pr-0">
+          <div className="group h-full">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-light transition duration-300 group-hover:-translate-y-1 group-hover:bg-brand/15">
+              <Image src={v.icon} alt="" width={36} height={36} className="h-9 w-9 object-contain" />
             </div>
             <h3 className="mt-5 text-xl text-navy">{v.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-gray-600">{v.text}</p>

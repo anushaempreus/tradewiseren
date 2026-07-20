@@ -52,7 +52,8 @@ export default function Home() {
                   className="h-auto w-full"
                 />
               </div>
-              <div className="absolute -left-4 top-8 hidden rounded-2xl bg-brand px-6 py-5 text-white shadow-xl md:block">
+              {/* keep the badge on the bottom corner so it never covers faces */}
+              <div className="absolute -bottom-8 -left-4 hidden rounded-2xl bg-brand px-6 py-5 text-white shadow-xl md:block">
                 <p className="font-heading text-4xl">30+</p>
                 <p className="text-xs font-bold uppercase tracking-wider">
                   Years Experience

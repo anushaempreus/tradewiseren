@@ -25,28 +25,30 @@ export default function Testimonials() {
   }, [next]);
 
   return (
-    <section className="bg-blueprint relative overflow-hidden bg-navy py-20 text-white">
-      <div className="pointer-events-none absolute right-8 top-6 select-none font-heading text-[180px] leading-none text-white/5" aria-hidden>
+    <section className="bg-dots relative overflow-hidden bg-cream py-24">
+      <div className="pointer-events-none absolute right-10 top-2 select-none font-heading text-[200px] leading-none text-brand/10" aria-hidden>
         &ldquo;
       </div>
       <div className="relative mx-auto max-w-7xl px-4">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <p className="eyebrow">Hear From Our Valued Clients</p>
-            <h2 className="mt-3 text-4xl md:text-5xl">Testimonials</h2>
+            <h2 className="mt-4 text-4xl text-navy md:text-5xl">
+              Testimonials
+            </h2>
           </div>
           <div className="flex gap-3">
             <button
               onClick={prev}
               aria-label="Previous testimonials"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/25 text-lg transition hover:border-brand hover:bg-brand"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-navy/20 bg-white text-lg text-navy transition hover:border-brand hover:bg-brand hover:text-white"
             >
               ←
             </button>
             <button
               onClick={next}
               aria-label="Next testimonials"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/25 text-lg transition hover:border-brand hover:bg-brand"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-navy/20 bg-white text-lg text-navy transition hover:border-brand hover:bg-brand hover:text-white"
             >
               →
             </button>
@@ -61,10 +63,10 @@ export default function Testimonials() {
             {TESTIMONIALS.map((t) => (
               <div
                 key={t.name}
-                className="shrink-0 px-3"
+                className="shrink-0 px-3 py-2"
                 style={{ width: `${100 / perView}%` }}
               >
-                <figure className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.06] p-7 backdrop-blur transition hover:border-brand/40">
+                <figure className="flex h-full flex-col rounded-[1.75rem] bg-white p-7 shadow-lg shadow-navy/5 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-navy/10">
                   <div className="flex gap-1 text-brand" aria-label="5 out of 5 stars">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <svg key={i} className="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden>
@@ -72,16 +74,16 @@ export default function Testimonials() {
                       </svg>
                     ))}
                   </div>
-                  <blockquote className="mt-4 flex-1 text-[15px] leading-relaxed text-gray-300">
+                  <blockquote className="mt-4 flex-1 text-[15px] leading-relaxed text-gray-600">
                     {t.quote}
                   </blockquote>
-                  <figcaption className="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+                  <figcaption className="mt-6 flex items-center gap-3 border-t border-line pt-5">
                     <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand font-heading text-lg text-white" aria-hidden>
                       {t.name.charAt(0)}
                     </span>
                     <div>
-                      <p className="font-heading text-lg text-white">{t.name}</p>
-                      <p className="text-xs uppercase tracking-widest text-brand">
+                      <p className="font-heading text-lg text-navy">{t.name}</p>
+                      <p className="text-xs font-semibold uppercase tracking-widest text-brand">
                         Verified Client
                       </p>
                     </div>

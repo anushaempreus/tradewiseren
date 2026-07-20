@@ -95,7 +95,8 @@ export default function AboutUs() {
                   className="h-auto w-full rounded-3xl"
                 />
               </div>
-              <div className="absolute -left-4 -top-5 hidden rounded-2xl bg-brand px-6 py-5 text-white shadow-xl md:block">
+              {/* bottom corner placement keeps the badge clear of faces */}
+              <div className="absolute -bottom-5 -left-4 hidden rounded-2xl bg-brand px-6 py-5 text-white shadow-xl md:block">
                 <p className="font-heading text-4xl">30+</p>
                 <p className="text-xs font-bold uppercase tracking-wider">
                   Years Experience

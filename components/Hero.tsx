@@ -1,16 +1,9 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CountUp from "@/components/CountUp";
+import AnimatedHeadline from "@/components/AnimatedHeadline";
+import Tilt from "@/components/Tilt";
 import { PHONE, PHONE_HREF } from "@/lib/data";
-
-const SLIDES = [
-  "/images/2023/11/shutterstock_2255055215-1.jpg",
-  "/images/2023/11/shutterstock_2159188569-1.jpg",
-  "/images/2023/11/shutterstock_788236681-1.jpg",
-];
 
 const STATS = [
   { value: "30+", label: "Years Experience" },
@@ -20,96 +13,140 @@ const STATS = [
 ];
 
 export default function Hero() {
-  const [slide, setSlide] = useState(0);
-
-  useEffect(() => {
-    const t = setInterval(() => setSlide((s) => (s + 1) % SLIDES.length), 8000);
-    return () => clearInterval(t);
-  }, []);
-
   return (
-    <section className="relative flex min-h-[88vh] flex-col overflow-hidden bg-navy">
-      {SLIDES.map((src, i) => (
-        <div
-          key={src}
-          className={`absolute inset-0 transition-opacity duration-[1500ms] ${
-            i === slide ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={src}
-            alt=""
-            fill
-            priority={i === 0}
-            sizes="100vw"
-            className={`object-cover ${i === slide ? "kenburns" : ""}`}
+    <section className="relative overflow-hidden bg-gradient-to-b from-cream via-white to-white">
+      {/* layered backdrop: dot grid + ambient glows */}
+      <div className="bg-dots absolute inset-0 opacity-70" aria-hidden />
+      <div className="blob-brand -top-24 right-[8%] h-[30rem] w-[30rem]" aria-hidden />
+      <div className="blob-teal -bottom-32 left-[-6%] h-[30rem] w-[30rem]" aria-hidden />
+      <div className="blob-brand left-[30%] top-[55%] h-72 w-72 opacity-70" aria-hidden />
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-4 pb-16 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:pt-20">
+        {/* Copy */}
+        <div>
+          <p className="eyebrow rise">Family Owned · Canberra Region</p>
+          <AnimatedHeadline
+            className="mt-6 text-5xl leading-[1.08] text-navy md:text-7xl"
+            segments={[
+              { text: "Renovations that feel like " },
+              { text: "home", brand: true },
+              { text: ", built to last." },
+            ]}
           />
-        </div>
-      ))}
-      <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/65 to-navy/20" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy/90 to-transparent" />
+          <p className="rise rise-2 mt-6 max-w-lg text-lg leading-relaxed text-gray-600">
+            Bathrooms, kitchens and whole-home transformations across
+            Canberra — designed around how you live and managed end-to-end by
+            a family-owned team with over 30 years of experience.
+          </p>
 
-      <div className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 pb-16 pt-24">
-        <p className="eyebrow rise">Welcome to TradeWise Renovations</p>
-        <h1 className="rise rise-1 mt-5 max-w-3xl text-5xl leading-[1.05] text-white md:text-7xl">
-          Renovations that feel like{" "}
-          <span className="text-brand">home</span>, built to last.
-        </h1>
-        <p className="rise rise-2 mt-6 max-w-xl text-lg leading-relaxed text-gray-200">
-          Complete home renovation services across the Canberra region —
-          bathrooms, kitchens and whole-home transformations, managed
-          end-to-end by a family-owned team.
-        </p>
-        <div className="rise rise-3 mt-9 flex flex-wrap items-center gap-4">
-          <Link
-            href="/request-consultation"
-            className="btn-sheen rounded-full bg-brand px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-dark active:scale-95"
-          >
-            Book a Free Consultation
-          </Link>
-          <Link
-            href="/gallery"
-            className="rounded-full border-2 border-white/70 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white transition hover:border-white hover:bg-white hover:text-navy active:scale-95"
-          >
-            View Our Work
-          </Link>
-          <a
-            href={PHONE_HREF}
-            className="ml-1 font-heading text-2xl text-white underline decoration-brand decoration-2 underline-offset-8 transition hover:text-brand"
-          >
-            {PHONE}
-          </a>
+          <div className="rise rise-3 mt-9 flex flex-wrap items-center gap-5">
+            <Link
+              href="/request-consultation"
+              className="btn-sheen rounded-full bg-brand px-8 py-4 text-sm font-bold uppercase tracking-wider text-white shadow-lg shadow-brand/25 transition hover:-translate-y-0.5 hover:bg-brand-dark active:scale-95"
+            >
+              Book a Free Consultation
+            </Link>
+            <Link href="/gallery" className="group flex items-center gap-3">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-navy transition group-hover:border-brand group-hover:bg-brand">
+                <svg
+                  className="h-4 w-4 text-navy transition group-hover:translate-x-0.5 group-hover:text-white"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden
+                >
+                  <path d="M2 8h11M9 3.5L13.5 8 9 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </span>
+              <span className="text-sm font-bold uppercase tracking-wider text-navy transition group-hover:text-brand">
+                View Our Work
+              </span>
+            </Link>
+          </div>
+
+          <div className="rise rise-4 mt-9 flex flex-wrap items-center gap-4">
+            <span className="flex gap-1 text-brand" aria-label="5 out of 5 stars">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg key={i} className="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden>
+                  <path d="M10 1l2.6 5.7 6.2.7-4.6 4.2 1.2 6.1L10 14.7l-5.4 3 1.2-6.1L1.2 7.4l6.2-.7z" />
+                </svg>
+              ))}
+            </span>
+            <p className="text-sm text-gray-600">
+              Rated 5.0 by Canberra homeowners ·{" "}
+              <a href={PHONE_HREF} className="font-heading text-base text-navy underline decoration-brand decoration-2 underline-offset-4 transition hover:text-brand">
+                {PHONE}
+              </a>
+            </p>
+          </div>
         </div>
 
-        {/* Slide dots */}
-        <div className="rise rise-4 mt-12 flex items-center gap-2.5">
-          {SLIDES.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setSlide(i)}
-              aria-label={`Slide ${i + 1}`}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === slide ? "w-10 bg-brand" : "w-5 bg-white/40 hover:bg-white/70"
-              }`}
-            />
-          ))}
-          <span className="ml-4 scroll-hint hidden text-white/60 md:inline-flex" aria-hidden>
-            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
-              <path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
-        </div>
+        {/* Bento collage — 3D mouse tilt like the official site's slider */}
+        <Tilt className="rise rise-2 relative">
+          {/* tilted accent panel lifts the collage off the page */}
+          <div
+            className="absolute -inset-4 -rotate-2 rounded-[2.5rem] bg-gradient-to-br from-brand/15 via-brand/5 to-teal/15"
+            aria-hidden
+          />
+          <div className="relative grid grid-cols-5 grid-rows-6 gap-4" style={{ height: "560px" }}>
+            <div className="relative col-span-3 row-span-6 overflow-hidden rounded-[2rem]">
+              <Image
+                src="/images/2026/04/TW2458-15-scaled.jpg"
+                alt="A completed TradeWise kitchen renovation"
+                fill
+                priority
+                sizes="(max-width: 1024px) 60vw, 30vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative col-span-2 row-span-3 overflow-hidden rounded-[2rem]">
+              <Image
+                src="/images/2026/02/TW2416-13.jpg"
+                alt="A completed TradeWise bathroom renovation"
+                fill
+                priority
+                sizes="(max-width: 1024px) 40vw, 20vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="col-span-2 row-span-3 flex flex-col justify-between rounded-[2rem] bg-deepteal p-6 text-white">
+              <svg className="h-8 w-8 fill-brand" viewBox="0 0 24 24" aria-hidden>
+                <path d="M12 3l9 8h-3v9h-4v-6H10v6H6v-9H3l9-8z" />
+              </svg>
+              <div>
+                <p className="font-heading text-4xl">
+                  <CountUp value="30+" />
+                </p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.15em] text-white/70">
+                  Years renovating Canberra homes
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Floating glass chip */}
+          <div className="floaty absolute -left-6 bottom-10 hidden items-center gap-3 rounded-2xl border border-white/60 bg-white/80 px-5 py-4 shadow-xl backdrop-blur md:flex">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-teal/15" aria-hidden>
+              <svg className="h-5 w-5 fill-teal" viewBox="0 0 24 24">
+                <path d="M12 2L4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1.2 14.6l-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3z" />
+              </svg>
+            </span>
+            <div>
+              <p className="font-heading text-navy">100% ACT Licensed</p>
+              <p className="text-xs text-gray-500">Builders &amp; trusted trades</p>
+            </div>
+          </div>
+        </Tilt>
       </div>
 
-      {/* Stats strip */}
-      <div className="relative border-t border-white/10 bg-navy/60 backdrop-blur">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 px-4 md:grid-cols-4">
+      {/* Stats row */}
+      <div className="relative border-t border-line">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-line px-4 md:grid-cols-4">
           {STATS.map((s) => (
-            <div key={s.label} className="group px-6 py-6 text-center transition hover:bg-white/5">
+            <div key={s.label} className="px-6 py-7 text-center">
               <p className="font-heading text-3xl text-brand md:text-4xl">
                 <CountUp value={s.value} />
               </p>
-              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-300">
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
                 {s.label}
               </p>
             </div>
