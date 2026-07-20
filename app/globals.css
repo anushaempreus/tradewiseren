@@ -164,6 +164,32 @@ h4 {
 }
 .scroll-hint { animation: scroll-hint 2s ease-in-out infinite; }
 
+/* Subtle dot-grid texture for light sections */
+.bg-dots {
+  background-image: radial-gradient(circle, rgba(9, 22, 42, 0.07) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Blueprint grid for dark sections */
+.bg-blueprint {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Infinite suburbs marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 36s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
 /* Button sheen sweep on hover */
 .btn-sheen {
   position: relative;
@@ -194,7 +220,8 @@ h4 {
   .overlay-in,
   .zoom-in,
   .floaty,
-  .scroll-hint {
+  .scroll-hint,
+  .marquee-track {
     animation: none;
   }
   .btn-sheen::after {

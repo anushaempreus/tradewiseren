@@ -32,7 +32,13 @@ const QUICK_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-gray-300">
+    <footer className="relative overflow-hidden bg-navy text-gray-300">
+      <p
+        className="pointer-events-none absolute -bottom-10 right-0 select-none font-heading text-[11rem] leading-none text-white/[0.03]"
+        aria-hidden
+      >
+        TradeWise
+      </p>
       {/* CTA strip */}
       <div className="border-b border-white/10">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-4 py-10">

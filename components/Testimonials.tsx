@@ -25,7 +25,7 @@ export default function Testimonials() {
   }, [next]);
 
   return (
-    <section className="relative overflow-hidden bg-navy py-20 text-white">
+    <section className="bg-blueprint relative overflow-hidden bg-navy py-20 text-white">
       <div className="pointer-events-none absolute right-8 top-6 select-none font-heading text-[180px] leading-none text-white/5" aria-hidden>
         &ldquo;
       </div>

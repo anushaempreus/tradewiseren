@@ -7,15 +7,17 @@ import CtaBand from "@/components/CtaBand";
 import Process from "@/components/Process";
 import Newsletter from "@/components/Newsletter";
 import Reveal from "@/components/Reveal";
+import Marquee from "@/components/Marquee";
 import { SERVICES } from "@/lib/data";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Marquee />
 
       {/* Value props */}
-      <section className="bg-cream py-20">
+      <section className="bg-dots bg-cream py-20">
         <div className="mx-auto max-w-7xl px-4 pb-12 text-center">
           <Reveal>
             <p className="eyebrow eyebrow--center justify-center">Our Difference</p>
@@ -99,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="bg-cream py-24">
+      <section className="bg-dots bg-cream py-24">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <Reveal>
@@ -129,12 +131,14 @@ export default function Home() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover transition duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/35 to-transparent transition group-hover:from-navy" />
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/35 to-transparent transition duration-500 group-hover:from-navy" />
+                  <div className="absolute inset-x-0 bottom-0 translate-y-9 p-6 text-white transition-transform duration-500 group-hover:translate-y-0">
                     <span className="mb-3 block h-0.5 w-10 bg-brand transition-all duration-500 group-hover:w-16" aria-hidden />
                     <h3 className="text-2xl leading-snug">{s.title}</h3>
-                    <p className="mt-1.5 text-sm text-gray-300">{s.blurb}</p>
-                    <span className="mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-brand">
+                    <p className="mt-1.5 text-sm text-gray-300 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                      {s.blurb}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-brand opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                       Explore
                       <svg className="h-3.5 w-3.5 transition group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden>
                         <path d="M2 8h11M9 3.5L13.5 8 9 12.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />

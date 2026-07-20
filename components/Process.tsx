@@ -3,7 +3,7 @@ import { PROCESS_STEPS } from "@/lib/data";
 
 export default function Process() {
   return (
-    <section className="relative overflow-hidden bg-deepteal py-20 text-white">
+    <section className="bg-blueprint relative overflow-hidden bg-deepteal py-20 text-white">
       {/* decorative rings */}
       <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full border-[24px] border-white/5" aria-hidden />
       <div className="pointer-events-none absolute -bottom-32 -right-20 h-96 w-96 rounded-full border-[32px] border-white/5" aria-hidden />

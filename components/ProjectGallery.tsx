@@ -49,6 +49,14 @@ export default function ProjectGallery({
               sizes="(max-width: 768px) 50vw, 33vw"
               className="object-cover transition duration-500 group-hover:scale-105"
             />
+            <span className="absolute inset-0 flex items-center justify-center bg-navy/0 transition duration-300 group-hover:bg-navy/30" aria-hidden>
+              <span className="flex h-12 w-12 scale-75 items-center justify-center rounded-full bg-white/90 opacity-0 shadow-lg transition duration-300 group-hover:scale-100 group-hover:opacity-100">
+                <svg className="h-5 w-5 text-navy" viewBox="0 0 24 24" fill="none">
+                  <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
+                  <path d="M16.5 16.5L21 21M11 8v6M8 11h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </span>
+            </span>
           </button>
         ))}
       </div>
