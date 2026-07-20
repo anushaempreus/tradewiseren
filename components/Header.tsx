@@ -102,7 +102,11 @@ export default function Header() {
             scrolled ? "py-2" : "py-4"
           }`}
         >
-          <Link href="/" className="shrink-0" aria-label="TradeWise Renovations home">
+          <Link
+            href="/"
+            className="shrink-0 lg:mr-8 xl:mr-16"
+            aria-label="TradeWise Renovations home"
+          >
             <Image
               src="/images/2023/11/NEW-Logo-High-Res.png"
               alt="TradeWise Renovations"
