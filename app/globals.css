@@ -190,6 +190,22 @@ h4 {
   animation-play-state: paused;
 }
 
+/* Loading screen */
+@keyframes logo-breathe {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.97); }
+}
+.logo-breathe {
+  animation: logo-breathe 1.6s ease-in-out infinite;
+}
+@keyframes loader-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+.loader-bar {
+  animation: loader-slide 1.1s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
 /* Button sheen sweep on hover */
 .btn-sheen {
   position: relative;
@@ -221,7 +237,9 @@ h4 {
   .zoom-in,
   .floaty,
   .scroll-hint,
-  .marquee-track {
+  .marquee-track,
+  .logo-breathe,
+  .loader-bar {
     animation: none;
   }
   .btn-sheen::after {
