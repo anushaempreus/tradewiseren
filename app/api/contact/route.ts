@@ -1,34 +1,84 @@
 import { NextResponse } from "next/server";
+import { rateLimited, clientIp } from "@/lib/rate-limit";
 
-// TODO: wire to the client's mail provider (SMTP / Resend / HubSpot form API).
-// Enquiries are validated, rate-limited and logged server-side.
-
-const WINDOW_MS = 10 * 60 * 1000; // 10 minutes
-const MAX_PER_WINDOW = 5;
-const hits = new Map<string, { count: number; start: number }>();
-
-function rateLimited(ip: string): boolean {
-  const now = Date.now();
-  const entry = hits.get(ip);
-  if (!entry || now - entry.start > WINDOW_MS) {
-    hits.set(ip, { count: 1, start: now });
-    return false;
-  }
-  entry.count++;
-  // opportunistic cleanup so the map doesn't grow unbounded
-  if (hits.size > 5000) {
-    for (const [k, v] of hits) if (now - v.start > WINDOW_MS) hits.delete(k);
-  }
-  return entry.count > MAX_PER_WINDOW;
-}
+// Sends enquiries into the client's Microsoft 365 mailbox via the Graph API
+// (their mail lives on Exchange Online — independent of WordPress/WPEngine).
+// Required env vars (from the M365 tenant, via an app registration with
+// Mail.Send application permission):
+//   M365_TENANT_ID, M365_CLIENT_ID, M365_CLIENT_SECRET,
+//   M365_SENDER            e.g. website@tradewiserenovations.com (sending mailbox)
+//   CONTACT_RECIPIENT      defaults to info@tradewiserenovations.com
+// Without credentials configured, enquiries are logged server-side only.
 
 const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/;
 const SERVICES = new Set(["Kitchen", "Bathroom", "Whole House", "Other"]);
 
+const esc = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+async function sendViaGraph(fields: {
+  name: string;
+  phone: string;
+  email: string;
+  service: string;
+  message: string;
+}): Promise<"sent" | "skipped" | "failed"> {
+  const { M365_TENANT_ID, M365_CLIENT_ID, M365_CLIENT_SECRET, M365_SENDER } =
+    process.env;
+  const recipient =
+    process.env.CONTACT_RECIPIENT ?? "info@tradewiserenovations.com";
+  if (!M365_TENANT_ID || !M365_CLIENT_ID || !M365_CLIENT_SECRET || !M365_SENDER)
+    return "skipped";
+
+  const tokenRes = await fetch(
+    `https://login.microsoftonline.com/${M365_TENANT_ID}/oauth2/v2.0/token`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        client_id: M365_CLIENT_ID,
+        client_secret: M365_CLIENT_SECRET,
+        scope: "https://graph.microsoft.com/.default",
+        grant_type: "client_credentials",
+      }),
+    }
+  );
+  if (!tokenRes.ok) return "failed";
+  const { access_token } = await tokenRes.json();
+
+  const html = `
+    <h2>New website enquiry</h2>
+    <p><strong>Name:</strong> ${esc(fields.name)}</p>
+    <p><strong>Phone:</strong> ${esc(fields.phone)}</p>
+    <p><strong>Email:</strong> ${esc(fields.email)}</p>
+    <p><strong>Service:</strong> ${esc(fields.service)}</p>
+    <p><strong>Message:</strong></p>
+    <p>${esc(fields.message).replace(/\n/g, "<br/>")}</p>`;
+
+  const sendRes = await fetch(
+    `https://graph.microsoft.com/v1.0/users/${encodeURIComponent(M365_SENDER)}/sendMail`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        message: {
+          subject: `Website enquiry — ${fields.service} (${fields.name})`,
+          body: { contentType: "HTML", content: html },
+          toRecipients: [{ emailAddress: { address: recipient } }],
+          replyTo: [{ emailAddress: { address: fields.email } }],
+        },
+        saveToSentItems: true,
+      }),
+    }
+  );
+  return sendRes.ok ? "sent" : "failed";
+}
+
 export async function POST(req: Request) {
-  const ip =
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
-  if (rateLimited(ip)) {
+  if (rateLimited(clientIp(req))) {
     return NextResponse.json(
       { error: "Too many requests — please try again later." },
       { status: 429 }
@@ -67,9 +117,20 @@ export async function POST(req: Request) {
     );
   }
 
-  console.log(
-    "[contact enquiry]",
-    JSON.stringify({ name, phone, email, service, message, ip })
-  );
+  const fields = { name, phone, email, service, message };
+  let outcome: string;
+  try {
+    outcome = await sendViaGraph(fields);
+  } catch {
+    outcome = "failed";
+  }
+  console.log(`[contact enquiry] outcome=${outcome}`, JSON.stringify(fields));
+
+  if (outcome === "failed") {
+    return NextResponse.json(
+      { error: "We couldn't send your enquiry — please call 02 5112 2969." },
+      { status: 502 }
+    );
+  }
   return NextResponse.json({ ok: true });
 }

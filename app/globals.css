@@ -217,18 +217,6 @@ h4 {
   background-size: 44px 44px;
 }
 
-/* Infinite suburbs marquee */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-.marquee-track {
-  animation: marquee 36s linear infinite;
-}
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-
 /* Loading screen */
 @keyframes logo-breathe {
   0%, 100% { opacity: 1; transform: scale(1); }
@@ -276,7 +264,6 @@ h4 {
   .zoom-in,
   .floaty,
   .scroll-hint,
-  .marquee-track,
   .logo-breathe,
   .loader-bar {
     animation: none;

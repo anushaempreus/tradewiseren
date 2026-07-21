@@ -7,14 +7,12 @@ import CtaBand from "@/components/CtaBand";
 import Process from "@/components/Process";
 import Newsletter from "@/components/Newsletter";
 import Reveal from "@/components/Reveal";
-import Marquee from "@/components/Marquee";
 import { SERVICES } from "@/lib/data";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Marquee />
 
       {/* Value props */}
       <section className="bg-dots bg-cream py-20">

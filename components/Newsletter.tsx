@@ -5,7 +5,25 @@ import Reveal from "@/components/Reveal";
 
 export default function Newsletter() {
   const [email, setEmail] = useState("");
-  const [done, setDone] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">(
+    "idle"
+  );
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!email.trim()) return;
+    setStatus("sending");
+    try {
+      const r = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      setStatus(r.ok ? "done" : "error");
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <section className="bg-cream py-20">
@@ -15,9 +33,7 @@ export default function Newsletter() {
             <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10" aria-hidden />
             <div className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-deepteal/40" aria-hidden />
             <div className="relative">
-              <p className="eyebrow eyebrow--center justify-center !text-white/90">
-                Stay In The Loop
-              </p>
+              <p className="eyebrow">Stay In The Loop</p>
               <h2 className="mt-4 text-3xl md:text-4xl">
                 Keep Up To Date With Tradewise Renovations
               </h2>
@@ -28,17 +44,15 @@ export default function Newsletter() {
                 local transformations to exclusive seasonal promotions and
                 professional design hacks.
               </p>
-              {done ? (
+              {status === "done" ? (
                 <p className="mx-auto mt-8 max-w-md rounded-full bg-white/15 px-6 py-3.5 font-semibold">
-                  Thanks for subscribing — keep an eye on your inbox!
+                  Thanks for joining the TradeWise family — keep an eye on your
+                  inbox!
                 </p>
               ) : (
                 <form
                   className="mx-auto mt-8 flex max-w-lg flex-col gap-3 sm:flex-row"
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    if (email.trim()) setDone(true);
-                  }}
+                  onSubmit={onSubmit}
                 >
                   <label htmlFor="newsletter-email" className="sr-only">
                     Email address
@@ -47,6 +61,7 @@ export default function Newsletter() {
                     id="newsletter-email"
                     type="email"
                     required
+                    maxLength={200}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Your email address"
@@ -54,11 +69,17 @@ export default function Newsletter() {
                   />
                   <button
                     type="submit"
-                    className="rounded-full bg-brand px-8 py-3.5 font-bold uppercase tracking-wide transition hover:-translate-y-0.5 hover:bg-brand-dark"
+                    disabled={status === "sending"}
+                    className="rounded-full bg-brand px-8 py-3.5 font-bold uppercase tracking-wide transition hover:-translate-y-0.5 hover:bg-brand-dark disabled:opacity-60"
                   >
-                    Subscribe
+                    {status === "sending" ? "Joining…" : "Subscribe"}
                   </button>
                 </form>
+              )}
+              {status === "error" && (
+                <p className="mt-4 text-sm text-white" role="alert">
+                  Something went wrong — please try again in a few minutes.
+                </p>
               )}
             </div>
           </div>
