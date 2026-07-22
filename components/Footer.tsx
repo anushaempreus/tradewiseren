@@ -164,11 +164,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-        <p>
-          Copyright © {new Date().getFullYear()} TradeWise Renovations. ABN {ABN}
-        </p>
-        <p className="mt-1">Managed by Empreus IT Support.</p>
+      <div className="border-t border-white/10 py-6 text-xs text-gray-500">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <p>
+            Copyright © {new Date().getFullYear()} TradeWise Renovations. ABN {ABN}
+          </p>
+          <p>Managed by Empreus IT Support.</p>
+        </div>
       </div>
     </footer>
   );
