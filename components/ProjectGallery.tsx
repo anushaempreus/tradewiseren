@@ -3,11 +3,15 @@
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 
+type Photo = { src: string; w: number; h: number };
+
+// Masonry gallery that keeps every photo at its natural orientation —
+// portraits stay portrait, landscapes stay landscape (client request).
 export default function ProjectGallery({
   images,
   title,
 }: {
-  images: string[];
+  images: Photo[];
   title: string;
 }) {
   const [open, setOpen] = useState<number | null>(null);
@@ -34,20 +38,21 @@ export default function ProjectGallery({
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-        {images.map((src, i) => (
+      <div className="columns-2 gap-4 md:columns-3">
+        {images.map((img, i) => (
           <button
-            key={src}
+            key={img.src}
             onClick={() => setOpen(i)}
-            className="group relative block h-52 overflow-hidden rounded-lg md:h-72"
+            className="group relative mb-4 block w-full overflow-hidden rounded-xl"
             aria-label={`View photo ${i + 1} of ${title}`}
           >
             <Image
-              src={src}
+              src={img.src}
               alt={`${title} — photo ${i + 1}`}
-              fill
+              width={img.w}
+              height={img.h}
               sizes="(max-width: 768px) 50vw, 33vw"
-              className="object-cover transition duration-500 group-hover:scale-105"
+              className="h-auto w-full transition duration-500 group-hover:scale-105"
             />
             <span className="absolute inset-0 flex items-center justify-center bg-navy/0 transition duration-300 group-hover:bg-navy/30" aria-hidden>
               <span className="flex h-12 w-12 scale-75 items-center justify-center rounded-full bg-white/90 opacity-0 shadow-lg transition duration-300 group-hover:scale-100 group-hover:opacity-100">
@@ -87,8 +92,8 @@ export default function ProjectGallery({
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-              key={images[open]}
-              src={images[open]}
+              key={images[open].src}
+              src={images[open].src}
               alt={`${title} — photo ${open + 1}`}
               fill
               sizes="100vw"

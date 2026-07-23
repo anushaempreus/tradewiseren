@@ -30,14 +30,14 @@ const STAGES = [
 export default function AboutUs() {
   return (
     <>
-      <PageHero title="About Us" image="/images/2024/02/4-min.jpg" />
+      <PageHero title="About Us" />
 
-      <section className="py-24">
+      <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow">Our Story</p>
             <h2 className="mt-3 text-4xl leading-tight text-navy md:text-5xl">
-              Family owned, Canberra grown
+              About Us
             </h2>
             <div className="mt-6 space-y-4 leading-relaxed text-gray-600">
               <p>
@@ -75,94 +75,46 @@ export default function AboutUs() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <div className="relative">
-              {/* Natural 3:2 aspect — never crop the team out of the photo */}
-              <Image
-                src="/images/2026/05/3627_Tradewise_109-3.jpg"
-                alt="Completed TradeWise kitchen renovation"
-                width={2048}
-                height={1365}
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="h-auto w-full rounded-3xl"
-              />
-              <div className="relative mt-4">
-                <Image
-                  src="/images/2024/02/IMG_7003-1620x1080-1-1.jpg"
-                  alt="Completed TradeWise living area renovation"
-                  width={1620}
-                  height={1080}
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="h-auto w-full rounded-3xl"
-                />
-              </div>
-              {/* bottom corner placement keeps the badge clear of faces */}
-              <div className="absolute -bottom-5 -left-4 hidden rounded-2xl bg-brand px-6 py-5 text-white shadow-xl md:block">
-                <p className="font-heading text-4xl">30+</p>
-                <p className="text-xs font-bold uppercase tracking-wider">
-                  Years Experience
-                </p>
-              </div>
-            </div>
+            {/* Natural 3:2 aspect — never crop the team out of the photo */}
+            <Image
+              src="/images/2026/05/3627_Tradewise_109-3.jpg"
+              alt="The TradeWise Renovations team"
+              width={2048}
+              height={1365}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="h-auto w-full rounded-xl"
+            />
           </Reveal>
         </div>
       </section>
 
-      <section className="bg-cream py-24">
-        <div className="mx-auto max-w-7xl px-4">
-          <Reveal>
-            <div className="text-center">
-              <p className="eyebrow eyebrow--center justify-center">
-                How It Works
-              </p>
-              <h2 className="mt-3 text-4xl text-navy md:text-5xl">
-                Three stages, zero headaches
-              </h2>
-            </div>
-          </Reveal>
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
-            {STAGES.map((s, i) => (
-              <Reveal key={s.title} delay={i * 100}>
-                <div className="group h-full rounded-3xl bg-white p-9 shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl">
-                  <span className="font-heading text-6xl text-brand/20 transition group-hover:text-brand/40">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="mt-4 text-2xl text-navy">{s.title}</h3>
-                  <p className="mt-3 leading-relaxed text-gray-600">{s.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden py-24">
-        <Image
-          src="/images/2026/05/3635_Tradewise_001-1.jpg"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-white/93" />
-        <div className="relative">
-          <div className="pb-12 text-center">
-            <Reveal>
-              <p className="eyebrow eyebrow--center justify-center">
-                Our Difference
-              </p>
-              <h2 className="mt-3 text-4xl text-navy md:text-5xl">
-                Why Choose TradeWise Renovations?
-              </h2>
+      {/* Stages — kept in the original site's simple three-column style */}
+      <section className="bg-cream py-20">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 text-center md:grid-cols-3">
+          {STAGES.map((s, i) => (
+            <Reveal key={s.title} delay={i * 100}>
+              <div>
+                <h3 className="text-2xl text-navy">{s.title}</h3>
+                <span className="mx-auto mt-3 block h-0.5 w-10 bg-brand" aria-hidden />
+                <p className="mt-4 leading-relaxed text-gray-600">{s.text}</p>
+              </div>
             </Reveal>
-          </div>
-          <ValueProps />
+          ))}
         </div>
       </section>
 
-      <CtaBand
-        heading="Want to know more, get a quote or book a free consultation?"
-        background="/images/2024/02/IMG_7003-1620x1080-1-1.jpg"
-      />
+      {/* Why choose — original site style */}
+      <section className="py-20 text-center">
+        <Reveal>
+          <p className="eyebrow">Our Difference</p>
+          <h2 className="mb-12 mt-3 text-4xl text-navy md:text-5xl">
+            Why Choose TradeWise Renovations?
+          </h2>
+        </Reveal>
+        <ValueProps />
+      </section>
+
+      <CtaBand heading="Want to know more, get a quote or book a free consultation?" />
     </>
   );
 }

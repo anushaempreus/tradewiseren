@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Process from "@/components/Process";
@@ -61,21 +61,14 @@ export default function ServicePage(p: Props) {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <div className="relative">
-              <div className="relative h-96 overflow-hidden rounded-3xl lg:h-[520px]">
-                <Image
-                  src={p.introImage}
-                  alt={p.tagline}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 left-8 rounded-2xl bg-brand px-6 py-4 text-white shadow-xl">
-                <p className="text-xs font-bold uppercase tracking-[0.2em]">
-                  Fixed Price Quotes
-                </p>
-              </div>
+            <div className="relative h-96 overflow-hidden rounded-xl lg:h-[520px]">
+              <Image
+                src={p.introImage}
+                alt={p.tagline}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
           </Reveal>
         </div>
@@ -85,7 +78,7 @@ export default function ServicePage(p: Props) {
       <section className="bg-cream py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 lg:grid-cols-2">
           <Reveal>
-            <div className="relative order-2 h-96 overflow-hidden rounded-3xl lg:order-1 lg:h-[520px]">
+            <div className="relative order-2 h-96 overflow-hidden rounded-xl lg:order-1 lg:h-[520px]">
               <Image
                 src={p.featureImage}
                 alt={p.featureHeading}
@@ -104,7 +97,7 @@ export default function ServicePage(p: Props) {
                 <p key={t.slice(0, 30)}>{t}</p>
               ))}
             </div>
-            <div className="mt-7 rounded-2xl border-l-4 border-brand bg-white p-6 shadow-sm">
+            <div className="mt-7 rounded-xl border-l-4 border-brand bg-white p-6 shadow-sm">
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-brand">
                 What We Do
               </p>
@@ -130,14 +123,14 @@ export default function ServicePage(p: Props) {
                 ))}
               </div>
               {p.extra.callout && (
-                <p className="mt-7 rounded-2xl border-l-4 border-teal bg-cream p-6 font-medium leading-relaxed text-deepteal">
+                <p className="mt-7 rounded-xl border-l-4 border-teal bg-cream p-6 font-medium leading-relaxed text-deepteal">
                   {p.extra.callout}
                 </p>
               )}
             </Reveal>
             {p.extra.image && (
               <Reveal delay={120}>
-                <div className="relative h-96 overflow-hidden rounded-3xl lg:h-[480px]">
+                <div className="relative h-96 overflow-hidden rounded-xl lg:h-[480px]">
                   <Image
                     src={p.extra.image}
                     alt={p.extra.heading}
@@ -176,7 +169,7 @@ export default function ServicePage(p: Props) {
           <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
             {p.galleryImages.map((src, i) => (
               <Reveal key={src} delay={(i % 3) * 80}>
-                <div className="group relative h-56 overflow-hidden rounded-2xl md:h-80">
+                <div className="group relative h-56 overflow-hidden rounded-xl md:h-80">
                   <Image
                     src={src}
                     alt={`${p.title} — example ${i + 1}`}

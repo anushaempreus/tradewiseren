@@ -49,15 +49,15 @@ export default function Promotions() {
               Join Now
             </a>
           </div>
-          <div className="relative h-96 overflow-hidden rounded-lg lg:h-[480px]">
-            <Image
-              src="/images/2026/05/3635_Tradewise_033.jpg"
-              alt="A completed TradeWise renovation"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
+          {/* Full uncropped image, per client request */}
+          <Image
+            src="/images/2026/05/3635_Tradewise_033.jpg"
+            alt="A completed TradeWise renovation"
+            width={1365}
+            height={2048}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="mx-auto h-auto w-full max-w-md rounded-xl lg:max-w-full"
+          />
         </div>
       </section>
       <div id="subscribe">

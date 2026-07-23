@@ -26,13 +26,12 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="bg-cream py-20">
+    <section className="relative overflow-hidden bg-teal py-20 text-center text-white">
+      <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10" aria-hidden />
+      <div className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-deepteal/40" aria-hidden />
       <div className="mx-auto max-w-5xl px-4">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl bg-teal px-6 py-14 text-center text-white md:px-16">
-            <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10" aria-hidden />
-            <div className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-deepteal/40" aria-hidden />
-            <div className="relative">
+          <div className="relative">
               <p className="eyebrow">Stay In The Loop</p>
               <h2 className="mt-4 text-3xl md:text-4xl">
                 Keep Up To Date With Tradewise Renovations
@@ -82,7 +81,6 @@ export default function Newsletter() {
                 </p>
               )}
             </div>
-          </div>
         </Reveal>
       </div>
     </section>

@@ -32,27 +32,14 @@ h4 {
   letter-spacing: -0.01em;
 }
 
-/* Eyebrow label — modern pill badge (works on light and dark surfaces) */
+/* Eyebrow label — simple uppercase accent, matching the original site */
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(231, 127, 14, 0.25);
-  background: rgba(231, 127, 14, 0.1);
-  padding: 0.4rem 1rem;
-  font-size: 0.72rem;
+  display: inline-block;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--color-brand);
-}
-.eyebrow::before {
-  content: "";
-  width: 0.45rem;
-  height: 0.45rem;
-  border-radius: 9999px;
-  background: var(--color-brand);
 }
 
 /* Scroll reveal — hidden state is applied by JS only (progressive enhancement),

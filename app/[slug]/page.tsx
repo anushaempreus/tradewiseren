@@ -28,7 +28,7 @@ export async function generateMetadata({
     alternates: { canonical: `/${project.slug}` },
     openGraph: {
       title: `${project.title} | TradeWise Renovations`,
-      images: [{ url: project.images[0] }],
+      images: [{ url: project.images[0].src }],
     },
   };
 }
@@ -50,7 +50,7 @@ export default async function ProjectPage({
 
   return (
     <>
-      <PageHero title={project.title} image={project.images[0]} crumb="Gallery" />
+      <PageHero title={project.title} crumb="Gallery" />
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4">
@@ -119,7 +119,7 @@ export default async function ProjectPage({
                     className="group relative block h-64 overflow-hidden rounded-2xl"
                   >
                     <Image
-                      src={r.images[0]}
+                      src={r.images[0].src}
                       alt={r.title}
                       fill
                       sizes="(max-width: 640px) 100vw, 33vw"

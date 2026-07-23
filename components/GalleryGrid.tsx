@@ -8,7 +8,7 @@ type Project = {
   slug: string;
   title: string;
   category: string;
-  images: string[];
+  images: { src: string; w: number; h: number }[];
 };
 
 const FILTERS = [
@@ -60,12 +60,10 @@ export default function GalleryGrid({ projects }: { projects: Project[] }) {
             key={p.slug}
             href={`/${p.slug}`}
             style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
-            className={`card-in group relative block overflow-hidden rounded-3xl ${
-              i % 5 === 0 ? "sm:row-span-2 h-[420px] sm:h-auto sm:min-h-[560px]" : "h-[320px]"
-            }`}
+            className="card-in group relative block aspect-square overflow-hidden rounded-xl"
           >
             <Image
-              src={p.images[0]}
+              src={p.images[0].src}
               alt={p.title}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

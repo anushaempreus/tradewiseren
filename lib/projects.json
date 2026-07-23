@@ -4,17 +4,61 @@
     "title": "Ensuite, Bonython",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_9113-2.jpg",
-      "/images/2024/10/IMG_9124-1.jpg",
-      "/images/2024/10/IMG_9144.jpg",
-      "/images/2024/10/IMG_9128.jpg",
-      "/images/2024/10/IMG_9145.jpg",
-      "/images/2024/10/IMG_9135.jpg",
-      "/images/2024/10/IMG_9138.jpg",
-      "/images/2024/10/IMG_9141.jpg",
-      "/images/2024/10/IMG_9142.jpg",
-      "/images/2024/10/IMG_9136.jpg",
-      "/images/2024/10/IMG_9124.jpg"
+      {
+        "src": "/images/2024/10/IMG_9113-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9124-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9144.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_9128.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9145.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9135.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9138.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_9141.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9142.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9136.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_9124.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -22,18 +66,66 @@
     "title": "Bathroom & Ensuite, Bonython",
     "category": "bathroom",
     "images": [
-      "/images/2025/08/3449_tradewisereno_001-4.jpg",
-      "/images/2025/08/3449_tradewisereno_001-2.jpg",
-      "/images/2025/08/3449_tradewisereno_002.jpg",
-      "/images/2025/08/3449_tradewisereno_003.jpg",
-      "/images/2025/08/3449_tradewisereno_004.jpg",
-      "/images/2025/08/3449_tradewisereno_012-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_013-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_017-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_016-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_018-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_019-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_020-Copy.jpg"
+      {
+        "src": "/images/2025/08/3449_tradewisereno_001-4.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_001-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_002.jpg",
+        "w": 5760,
+        "h": 3840
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_003.jpg",
+        "w": 5760,
+        "h": 3840
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_004.jpg",
+        "w": 5760,
+        "h": 3840
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_012-Copy.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_013-Copy.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_017-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_016-Copy.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_018-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_019-Copy.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_020-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      }
     ]
   },
   {
@@ -41,15 +133,51 @@
     "title": "Bathroom, Kambah",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/TW2374-1-1.jpg",
-      "/images/2024/10/TW2374-3.jpg",
-      "/images/2024/10/TW2374-5.jpg",
-      "/images/2024/10/TW2374-6.jpg",
-      "/images/2024/10/TW2374-7.jpg",
-      "/images/2024/10/TW2374-9.jpg",
-      "/images/2024/10/TW2374-12.jpg",
-      "/images/2024/10/TW2374-13.jpg",
-      "/images/2024/10/TW2374-.jpg"
+      {
+        "src": "/images/2024/10/TW2374-1-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/TW2374-3.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-5.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-6.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-7.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-9.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-12.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-13.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2374-.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -57,17 +185,61 @@
     "title": "Ensuite, Forde",
     "category": "bathroom",
     "images": [
-      "/images/2026/03/TW2543-4-scaled.jpg",
-      "/images/2026/03/TW2543-8.jpg",
-      "/images/2026/03/TW2543-8-scaled.jpg",
-      "/images/2026/03/TW2543-11.jpg",
-      "/images/2026/03/TW2543-11-scaled.jpg",
-      "/images/2026/03/TW2543-15.jpg",
-      "/images/2026/03/TW2543-15-scaled.jpg",
-      "/images/2026/03/TW2543-1.jpg",
-      "/images/2026/03/TW2543-1-scaled.jpg",
-      "/images/2026/03/TW2543-3.jpg",
-      "/images/2026/03/TW2543-3-scaled.jpg"
+      {
+        "src": "/images/2026/03/TW2543-4-scaled.jpg",
+        "w": 2560,
+        "h": 1707
+      },
+      {
+        "src": "/images/2026/03/TW2543-8.jpg",
+        "w": 3926,
+        "h": 5889
+      },
+      {
+        "src": "/images/2026/03/TW2543-8-scaled.jpg",
+        "w": 1707,
+        "h": 2560
+      },
+      {
+        "src": "/images/2026/03/TW2543-11.jpg",
+        "w": 3985,
+        "h": 5978
+      },
+      {
+        "src": "/images/2026/03/TW2543-11-scaled.jpg",
+        "w": 1707,
+        "h": 2560
+      },
+      {
+        "src": "/images/2026/03/TW2543-15.jpg",
+        "w": 4000,
+        "h": 6000
+      },
+      {
+        "src": "/images/2026/03/TW2543-15-scaled.jpg",
+        "w": 1707,
+        "h": 2560
+      },
+      {
+        "src": "/images/2026/03/TW2543-1.jpg",
+        "w": 3965,
+        "h": 5948
+      },
+      {
+        "src": "/images/2026/03/TW2543-1-scaled.jpg",
+        "w": 1707,
+        "h": 2560
+      },
+      {
+        "src": "/images/2026/03/TW2543-3.jpg",
+        "w": 3813,
+        "h": 5719
+      },
+      {
+        "src": "/images/2026/03/TW2543-3-scaled.jpg",
+        "w": 1707,
+        "h": 2560
+      }
     ]
   },
   {
@@ -75,10 +247,26 @@
     "title": "Bathroom, Gowrie",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/TW22103-5.jpg",
-      "/images/2024/10/TW22103-1.jpg",
-      "/images/2024/10/TW22103-2.jpg",
-      "/images/2024/10/TW22103-3.jpg"
+      {
+        "src": "/images/2024/10/TW22103-5.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/TW22103-1.jpg",
+        "w": 1080,
+        "h": 1564
+      },
+      {
+        "src": "/images/2024/10/TW22103-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/TW22103-3.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -86,14 +274,46 @@
     "title": "Ensuite, Deakin",
     "category": "bathroom",
     "images": [
-      "/images/2024/07/1620-x-1080.jpg",
-      "/images/2024/07/IMG_8358-1.jpg",
-      "/images/2024/07/IMG_8365.jpg",
-      "/images/2024/07/IMG_8367.jpg",
-      "/images/2024/07/IMG_8362-1.jpg",
-      "/images/2024/07/IMG_8371.jpg",
-      "/images/2024/07/IMG_8379.jpg",
-      "/images/2024/07/IMG_8361.jpg"
+      {
+        "src": "/images/2024/07/1620-x-1080.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/07/IMG_8358-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2024/07/IMG_8365.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2024/07/IMG_8367.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2024/07/IMG_8362-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/07/IMG_8371.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/07/IMG_8379.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/07/IMG_8361.jpg",
+        "w": 720,
+        "h": 1080
+      }
     ]
   },
   {
@@ -101,20 +321,76 @@
     "title": "Main Bathroom, Calwell",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_8510-2.jpg",
-      "/images/2024/10/IMG_8510-2-1.jpg",
-      "/images/2024/10/IMG_8556.jpg",
-      "/images/2024/10/IMG_8560.jpg",
-      "/images/2024/10/IMG_8561.jpg",
-      "/images/2024/10/IMG_8572.jpg",
-      "/images/2024/10/IMG_8568.jpg",
-      "/images/2024/10/IMG_8588.jpg",
-      "/images/2024/10/IMG_8582.jpg",
-      "/images/2024/10/IMG_8575.jpg",
-      "/images/2024/10/IMG_8562.jpg",
-      "/images/2024/10/IMG_8563.jpg",
-      "/images/2024/10/IMG_8557.jpg",
-      "/images/2024/10/IMG_8564.jpg"
+      {
+        "src": "/images/2024/10/IMG_8510-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8510-2-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8556.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8560.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8561.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8572.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8568.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8588.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8582.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8575.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8562.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8563.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8557.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8564.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -122,13 +398,41 @@
     "title": "Main Bathroom, Conder",
     "category": "bathroom",
     "images": [
-      "/images/2023/10/DSC01074-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6274-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6271-720x1080-1.jpg",
-      "/images/2023/10/IMG_6263-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6262-1620x1080-1.jpg",
-      "/images/2023/10/bathroommain.webp",
-      "/images/2023/10/IMG_6272-720x1080-1.jpg"
+      {
+        "src": "/images/2023/10/DSC01074-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6274-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6271-720x1080-1.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6263-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6262-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/bathroommain.webp",
+        "w": 900,
+        "h": 675
+      },
+      {
+        "src": "/images/2023/10/IMG_6272-720x1080-1.jpg",
+        "w": 720,
+        "h": 1080
+      }
     ]
   },
   {
@@ -136,15 +440,51 @@
     "title": "Ensuite, Kambah",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_8824.jpg",
-      "/images/2024/10/IMG_8837.jpg",
-      "/images/2024/10/IMG_8839.jpg",
-      "/images/2024/10/IMG_8845.jpg",
-      "/images/2024/10/IMG_8846.jpg",
-      "/images/2024/10/IMG_8850.jpg",
-      "/images/2024/10/IMG_8830.jpg",
-      "/images/2024/10/IMG_8834.jpg",
-      "/images/2024/10/IMG_8836.jpg"
+      {
+        "src": "/images/2024/10/IMG_8824.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8837.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8839.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8845.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8846.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8850.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8830.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8834.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8836.jpg",
+        "w": 1080,
+        "h": 1620
+      }
     ]
   },
   {
@@ -152,15 +492,51 @@
     "title": "Bathroom, Chapman",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_8126.jpg",
-      "/images/2024/10/IMG_8105.jpg",
-      "/images/2024/10/IMG_8110.jpg",
-      "/images/2024/10/IMG_8112.jpg",
-      "/images/2024/10/IMG_8120.jpg",
-      "/images/2024/10/IMG_8125.jpg",
-      "/images/2024/10/IMG_8101-2.jpg",
-      "/images/2024/10/IMG_8102-2.jpg",
-      "/images/2024/10/IMG_8103.jpg"
+      {
+        "src": "/images/2024/10/IMG_8126.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8105.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8110.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8112.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8120.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8125.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8101-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8102-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8103.jpg",
+        "w": 1080,
+        "h": 1620
+      }
     ]
   },
   {
@@ -168,14 +544,46 @@
     "title": "Ensuite, Bathroom & Powder Room, Chapman",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_8435.jpg",
-      "/images/2024/10/IMG_8078.jpg",
-      "/images/2024/10/IMG_8091.jpg",
-      "/images/2024/10/IMG_8097.jpg",
-      "/images/2024/10/IMG_8096.jpg",
-      "/images/2024/10/IMG_8436.jpg",
-      "/images/2024/10/IMG_8439.jpg",
-      "/images/2024/10/IMG_8445.jpg"
+      {
+        "src": "/images/2024/10/IMG_8435.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8078.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8091.jpg",
+        "w": 1068,
+        "h": 1603
+      },
+      {
+        "src": "/images/2024/10/IMG_8097.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8096.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8436.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8439.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8445.jpg",
+        "w": 1080,
+        "h": 1620
+      }
     ]
   },
   {
@@ -183,11 +591,31 @@
     "title": "Bathroom & Toilet, Monash",
     "category": "bathroom",
     "images": [
-      "/images/2024/06/IMG_7138-1620x1080-1-1.jpg",
-      "/images/2024/06/IMG_7147-1620x1080-1.jpg",
-      "/images/2024/06/IMG_7138-1620x1080-1.jpg",
-      "/images/2024/06/IMG_7145-728x1080-1.jpg",
-      "/images/2024/06/IMG_7134-720x1080-1.jpg"
+      {
+        "src": "/images/2024/06/IMG_7138-1620x1080-1-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/06/IMG_7147-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/06/IMG_7138-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/06/IMG_7145-728x1080-1.jpg",
+        "w": 728,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/06/IMG_7134-720x1080-1.jpg",
+        "w": 720,
+        "h": 1080
+      }
     ]
   },
   {
@@ -195,16 +623,56 @@
     "title": "Bathroom, Ensuite & Toilet, Conder",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/TW2101-6.jpg",
-      "/images/2024/10/TW2101-14.jpg",
-      "/images/2024/10/TW2101-2.jpg",
-      "/images/2024/10/TW2101-3.jpg",
-      "/images/2024/10/TW2101-5.jpg",
-      "/images/2024/10/TW2101-7.jpg",
-      "/images/2024/10/TW2101-8.jpg",
-      "/images/2024/10/TW2101-9.jpg",
-      "/images/2024/10/TW2101-10.jpg",
-      "/images/2024/10/TW2101-11-1.jpg"
+      {
+        "src": "/images/2024/10/TW2101-6.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/TW2101-14.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2101-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/TW2101-3.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2101-5.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2101-7.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/TW2101-8.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2101-9.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2101-10.jpg",
+        "w": 1620,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/TW2101-11-1.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -212,10 +680,26 @@
     "title": "Bathroom, Florey",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_8674.jpg",
-      "/images/2024/10/IMG_8673-2.jpg",
-      "/images/2024/10/IMG_8674-1.jpg",
-      "/images/2024/10/IMG_8681.jpg"
+      {
+        "src": "/images/2024/10/IMG_8674.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8673-2.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8674-1.jpg",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8681.jpg",
+        "w": 1920,
+        "h": 1080
+      }
     ]
   },
   {
@@ -223,12 +707,36 @@
     "title": "Main Bathroom, Conder",
     "category": "bathroom",
     "images": [
-      "/images/2024/10/IMG_7849.jpg",
-      "/images/2024/10/IMG_7865-2.jpg",
-      "/images/2024/10/IMG_7851.jpg",
-      "/images/2024/10/IMG_7864.jpg",
-      "/images/2024/10/IMG_7843-2.jpg",
-      "/images/2024/10/IMG_7847.jpg"
+      {
+        "src": "/images/2024/10/IMG_7849.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_7865-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_7851.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_7864.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_7843-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_7847.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -236,13 +744,41 @@
     "title": "Kitchen, Bonython",
     "category": "kitchen",
     "images": [
-      "/images/2025/08/3449_tradewisereno_025-Copy-1.jpg",
-      "/images/2025/08/3449_tradewisereno_030-1-large.jpg",
-      "/images/2025/08/3449_tradewisereno_031.jpg",
-      "/images/2025/08/3449_tradewisereno_032.jpg",
-      "/images/2025/08/3449_tradewisereno_026-1.jpg",
-      "/images/2025/08/3449_tradewisereno_028-1.jpg",
-      "/images/2025/08/3449_tradewisereno_029.jpg"
+      {
+        "src": "/images/2025/08/3449_tradewisereno_025-Copy-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_030-1-large.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_031.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_032.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_026-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_028-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_029.jpg",
+        "w": 1080,
+        "h": 720
+      }
     ]
   },
   {
@@ -250,13 +786,41 @@
     "title": "Kitchen, Dickson",
     "category": "kitchen",
     "images": [
-      "/images/2025/10/3486_tradewise_002.jpg",
-      "/images/2025/10/3486_tradewise_021.jpg",
-      "/images/2025/10/3486_tradewise_022.jpg",
-      "/images/2025/10/3486_tradewise_023.jpg",
-      "/images/2025/10/3486_tradewise_019.jpg",
-      "/images/2025/10/3486_tradewise_018.jpg",
-      "/images/2025/10/3486_tradewise_003.jpg"
+      {
+        "src": "/images/2025/10/3486_tradewise_002.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/10/3486_tradewise_021.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/10/3486_tradewise_022.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/10/3486_tradewise_023.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/10/3486_tradewise_019.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/10/3486_tradewise_018.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/10/3486_tradewise_003.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -264,11 +828,31 @@
     "title": "Kitchen Project",
     "category": "kitchen",
     "images": [
-      "/images/2026/02/3552_Tradewise_024-1.jpg",
-      "/images/2026/02/3552_Tradewise_026.jpg",
-      "/images/2026/02/3552_Tradewise_025.jpg",
-      "/images/2026/02/3552_Tradewise_029.jpg",
-      "/images/2026/02/3552_Tradewise_027.jpg"
+      {
+        "src": "/images/2026/02/3552_Tradewise_024-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_026.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_025.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_029.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_027.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -276,14 +860,46 @@
     "title": "Kitchen, Fadden",
     "category": "kitchen",
     "images": [
-      "/images/2026/03/TW2527-1.jpg",
-      "/images/2026/03/TW2527-1-scaled.jpg",
-      "/images/2026/03/TW2527-10.jpg",
-      "/images/2026/03/TW2527-10-scaled.jpg",
-      "/images/2026/03/TW2527-7.jpg",
-      "/images/2026/03/TW2527-7-scaled.jpg",
-      "/images/2026/03/TW2527-3.jpg",
-      "/images/2026/03/TW2527-3-scaled.jpg"
+      {
+        "src": "/images/2026/03/TW2527-1.jpg",
+        "w": 5719,
+        "h": 3813
+      },
+      {
+        "src": "/images/2026/03/TW2527-1-scaled.jpg",
+        "w": 2560,
+        "h": 1707
+      },
+      {
+        "src": "/images/2026/03/TW2527-10.jpg",
+        "w": 5600,
+        "h": 3733
+      },
+      {
+        "src": "/images/2026/03/TW2527-10-scaled.jpg",
+        "w": 2560,
+        "h": 1707
+      },
+      {
+        "src": "/images/2026/03/TW2527-7.jpg",
+        "w": 5715,
+        "h": 3810
+      },
+      {
+        "src": "/images/2026/03/TW2527-7-scaled.jpg",
+        "w": 2560,
+        "h": 1707
+      },
+      {
+        "src": "/images/2026/03/TW2527-3.jpg",
+        "w": 5726,
+        "h": 3817
+      },
+      {
+        "src": "/images/2026/03/TW2527-3-scaled.jpg",
+        "w": 2560,
+        "h": 1707
+      }
     ]
   },
   {
@@ -291,10 +907,26 @@
     "title": "Alfresco, Bonython",
     "category": "kitchen",
     "images": [
-      "/images/2026/02/TW2535-3.jpg",
-      "/images/2026/02/TW2535-6.jpg",
-      "/images/2026/02/TW2535-7.jpg",
-      "/images/2026/02/TW2535-1.jpg"
+      {
+        "src": "/images/2026/02/TW2535-3.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/TW2535-6.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/TW2535-7.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/TW2535-1.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -302,13 +934,41 @@
     "title": "Kitchen, Kambah",
     "category": "kitchen",
     "images": [
-      "/images/2025/10/TW2548-3-1.jpg",
-      "/images/2025/10/TW2458-5.jpg",
-      "/images/2025/10/TW2458-6.jpg",
-      "/images/2025/10/TW2458-9.jpg",
-      "/images/2025/10/TW2458-12.jpg",
-      "/images/2025/10/TW2548-2.jpg",
-      "/images/2025/10/TW2548-3.jpg"
+      {
+        "src": "/images/2025/10/TW2548-3-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/10/TW2458-5.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/10/TW2458-6.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/10/TW2458-9.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/10/TW2458-12.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/10/TW2548-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/10/TW2548-3.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -316,14 +976,46 @@
     "title": "Kitchen, Jerrabomberra",
     "category": "kitchen",
     "images": [
-      "/images/2025/08/TW2332-2-1.jpg",
-      "/images/2025/08/TW2332-1.jpg",
-      "/images/2025/08/TW2332-4.jpg",
-      "/images/2025/08/TW2332-6.jpg",
-      "/images/2025/08/TW2332-9.jpg",
-      "/images/2025/08/TW2332-14.jpg",
-      "/images/2025/08/TW2332-15.jpg",
-      "/images/2025/08/TW2332-7-large-1.jpg"
+      {
+        "src": "/images/2025/08/TW2332-2-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-4.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-6.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-9.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-14.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-15.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2332-7-large-1.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -331,14 +1023,46 @@
     "title": "Kitchen, Bonython",
     "category": "kitchen",
     "images": [
-      "/images/2025/08/TW2290-5-large.jpg",
-      "/images/2025/08/TW2290-5-1.jpg",
-      "/images/2025/08/TW2290-10.jpg",
-      "/images/2025/08/TW2290-6.jpg",
-      "/images/2025/08/TW2290-7.jpg",
-      "/images/2025/08/TW2290-12.jpg",
-      "/images/2025/08/TW2290-11.jpg",
-      "/images/2025/08/TW2290-3.jpg"
+      {
+        "src": "/images/2025/08/TW2290-5-large.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/TW2290-5-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2290-10.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2290-6.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/TW2290-7.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/TW2290-12.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/TW2290-11.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/TW2290-3.jpg",
+        "w": 1080,
+        "h": 720
+      }
     ]
   },
   {
@@ -346,12 +1070,36 @@
     "title": "Kitchen, Calwell",
     "category": "kitchen",
     "images": [
-      "/images/2025/08/IMG_9381-1.jpg",
-      "/images/2025/08/IMG_9389-Copy.jpg",
-      "/images/2025/08/IMG_9393.jpg",
-      "/images/2025/08/IMG_9394.jpg",
-      "/images/2025/08/IMG_9398.jpg",
-      "/images/2025/08/IMG_9381-large.jpg"
+      {
+        "src": "/images/2025/08/IMG_9381-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/IMG_9389-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/IMG_9393.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/IMG_9394.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/IMG_9398.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/IMG_9381-large.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -359,9 +1107,21 @@
     "title": "Kitchen, Conder",
     "category": "kitchen",
     "images": [
-      "/images/2023/10/IMG_6854-1185x1080-1.jpg",
-      "/images/2023/10/IMG_6860-2-1546x1080-1.jpg",
-      "/images/2023/10/IMG_6876-2-1431x1080-1.jpg"
+      {
+        "src": "/images/2023/10/IMG_6854-1185x1080-1.jpg",
+        "w": 1185,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6860-2-1546x1080-1.jpg",
+        "w": 1546,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6876-2-1431x1080-1.jpg",
+        "w": 1431,
+        "h": 1080
+      }
     ]
   },
   {
@@ -369,8 +1129,16 @@
     "title": "Kitchen, Bonython",
     "category": "kitchen",
     "images": [
-      "/images/2023/10/IMG_6969-1589x1080-1.jpg",
-      "/images/2023/10/IMG_6981-1620x1080-1.jpg"
+      {
+        "src": "/images/2023/10/IMG_6969-1589x1080-1.jpg",
+        "w": 1589,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6981-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -378,9 +1146,21 @@
     "title": "Kitchen, Calwell",
     "category": "kitchen",
     "images": [
-      "/images/2024/09/kitchen-design-canberra-1.jpg",
-      "/images/2023/10/IMG_6969-1589x1080-1.jpg",
-      "/images/2023/10/IMG_6981-1620x1080-1.jpg"
+      {
+        "src": "/images/2024/09/kitchen-design-canberra-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2023/10/IMG_6969-1589x1080-1.jpg",
+        "w": 1589,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6981-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -388,13 +1168,41 @@
     "title": "Kitchen, Monash",
     "category": "kitchen",
     "images": [
-      "/images/2023/10/IMG_6769-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6765-1036x1080-1.jpg",
-      "/images/2023/10/IMG_6767-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6768-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6770-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6771-1620x1080-1.jpg",
-      "/images/2023/10/IMG_6774-1620x1080-1.jpg"
+      {
+        "src": "/images/2023/10/IMG_6769-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6765-1036x1080-1.jpg",
+        "w": 1036,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6767-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6768-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6770-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6771-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_6774-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -402,10 +1210,26 @@
     "title": "Laundry, Bonython",
     "category": "laundry",
     "images": [
-      "/images/2025/08/3449_tradewisereno_021-1-small.jpg",
-      "/images/2025/08/3449_tradewisereno_024.jpg",
-      "/images/2025/08/3449_tradewisereno_023.jpg",
-      "/images/2025/08/3449_tradewisereno_021-large.jpg"
+      {
+        "src": "/images/2025/08/3449_tradewisereno_021-1-small.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_024.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_023.jpg",
+        "w": 720,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_021-large.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -413,11 +1237,31 @@
     "title": "Laundry Project",
     "category": "laundry",
     "images": [
-      "/images/2026/02/3552_Tradewise_001.jpg",
-      "/images/2026/02/3552_Tradewise_004.jpg",
-      "/images/2026/02/3552_Tradewise_005.jpg",
-      "/images/2026/02/3552_Tradewise_003.jpg",
-      "/images/2026/02/3552_Tradewise_002.jpg"
+      {
+        "src": "/images/2026/02/3552_Tradewise_001.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_004.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_005.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_003.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2026/02/3552_Tradewise_002.jpg",
+        "w": 1080,
+        "h": 720
+      }
     ]
   },
   {
@@ -425,11 +1269,31 @@
     "title": "Laundry, Bonython",
     "category": "laundry",
     "images": [
-      "/images/2024/10/IMG_8766.jpg",
-      "/images/2024/10/IMG_8775.jpg",
-      "/images/2024/10/IMG_8765.jpg",
-      "/images/2024/10/IMG_8643.jpg",
-      "/images/2024/10/IMG_8646.jpg"
+      {
+        "src": "/images/2024/10/IMG_8766.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2024/10/IMG_8775.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8765.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8643.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2024/10/IMG_8646.jpg",
+        "w": 1080,
+        "h": 1620
+      }
     ]
   },
   {
@@ -437,10 +1301,26 @@
     "title": "Laundry, Jerrabomberra",
     "category": "laundry",
     "images": [
-      "/images/2025/09/IMG_9558.jpg",
-      "/images/2025/09/IMG_9566.jpg",
-      "/images/2025/09/IMG_9557.jpg",
-      "/images/2025/09/IMG_9568.jpg"
+      {
+        "src": "/images/2025/09/IMG_9558.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/09/IMG_9566.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/09/IMG_9557.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/09/IMG_9568.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -448,10 +1328,26 @@
     "title": "Laundry, Kambah",
     "category": "laundry",
     "images": [
-      "/images/2025/09/IMG_9896.jpg",
-      "/images/2025/09/IMG_9899.jpg",
-      "/images/2025/09/IMG_9901-1.jpg",
-      "/images/2025/09/IMG_9901.jpg"
+      {
+        "src": "/images/2025/09/IMG_9896.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/09/IMG_9899.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/09/IMG_9901-1.jpg",
+        "w": 1080,
+        "h": 1620
+      },
+      {
+        "src": "/images/2025/09/IMG_9901.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -459,8 +1355,16 @@
     "title": "Laundry, Oxley",
     "category": "laundry",
     "images": [
-      "/images/2023/10/IMG_7397-2-1636x1080-1.jpg",
-      "/images/2023/10/TW221174-2-700x1080-1.png"
+      {
+        "src": "/images/2023/10/IMG_7397-2-1636x1080-1.jpg",
+        "w": 1636,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/TW221174-2-700x1080-1.png",
+        "w": 700,
+        "h": 1080
+      }
     ]
   },
   {
@@ -468,9 +1372,21 @@
     "title": "Laundry, Macgregor",
     "category": "laundry",
     "images": [
-      "/images/2023/10/unnamed-810x1080-2.jpg",
-      "/images/2023/10/20210114_124703390_iOS-1620x1080-2.jpg",
-      "/images/2023/10/unnamed-1-810x1080-2.jpg"
+      {
+        "src": "/images/2023/10/unnamed-810x1080-2.jpg",
+        "w": 759,
+        "h": 1029
+      },
+      {
+        "src": "/images/2023/10/20210114_124703390_iOS-1620x1080-2.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/unnamed-1-810x1080-2.jpg",
+        "w": 787,
+        "h": 1049
+      }
     ]
   },
   {
@@ -478,7 +1394,11 @@
     "title": "Laundry, Conder",
     "category": "laundry",
     "images": [
-      "/images/2023/10/IMG_7155-1266x1080-1.jpg"
+      {
+        "src": "/images/2023/10/IMG_7155-1266x1080-1.jpg",
+        "w": 1266,
+        "h": 1080
+      }
     ]
   },
   {
@@ -486,14 +1406,46 @@
     "title": "Living Areas, Bonython",
     "category": "interior",
     "images": [
-      "/images/2025/08/3449_tradewisereno_015-Copy-1-LARGE.jpg",
-      "/images/2025/08/3449_tradewisereno_015-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_011-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_027-1.jpg",
-      "/images/2025/08/3449_tradewisereno_008-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_009-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_010-Copy.jpg",
-      "/images/2025/08/3449_tradewisereno_006-Copy.jpg"
+      {
+        "src": "/images/2025/08/3449_tradewisereno_015-Copy-1-LARGE.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_015-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_011-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_027-1.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_008-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_009-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_010-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "/images/2025/08/3449_tradewisereno_006-Copy.jpg",
+        "w": 1080,
+        "h": 720
+      }
     ]
   },
   {
@@ -501,12 +1453,36 @@
     "title": "Living and Entry, Dickson",
     "category": "interior",
     "images": [
-      "/images/2025/09/dickson-1.jpg",
-      "/images/2025/09/3486_tradewise_001.jpg",
-      "/images/2025/09/3486_tradewise_008.jpg",
-      "/images/2025/09/3486_tradewise_014.jpg",
-      "/images/2025/09/3486_tradewise_004.jpg",
-      "/images/2025/09/3486_tradewise_009.jpg"
+      {
+        "src": "/images/2025/09/dickson-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/09/3486_tradewise_001.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/09/3486_tradewise_008.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/09/3486_tradewise_014.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/09/3486_tradewise_004.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2025/09/3486_tradewise_009.jpg",
+        "w": 1620,
+        "h": 1080
+      }
     ]
   },
   {
@@ -514,10 +1490,26 @@
     "title": "Office, Bonython",
     "category": "interior",
     "images": [
-      "/images/2023/10/IMG_7111-1620x1080-1.jpg",
-      "/images/2023/10/IMG_7113-2-1754x1080-1.jpg",
-      "/images/2023/10/IMG_7114-1620x1080-1.jpg",
-      "/images/2023/10/IMG_0509-1536x1080-1.jpg"
+      {
+        "src": "/images/2023/10/IMG_7111-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_7113-2-1754x1080-1.jpg",
+        "w": 1754,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_7114-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_0509-1536x1080-1.jpg",
+        "w": 1536,
+        "h": 1080
+      }
     ]
   },
   {
@@ -525,12 +1517,36 @@
     "title": "Rumpus Room, Calwell",
     "category": "interior",
     "images": [
-      "/images/2023/10/IMG_5954-1620x1080-1.jpg",
-      "/images/2023/10/IMG_5872-3-1620x1080-1.jpg",
-      "/images/2023/10/IMG_5880-1789x1080-1.jpg",
-      "/images/2023/10/IMG_5901-2-1692x1080-1.jpg",
-      "/images/2023/10/IMG_5897-2-1620x1080-1.jpg",
-      "/images/2023/10/IMG_5914-1920x1071-1.jpg"
+      {
+        "src": "/images/2023/10/IMG_5954-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_5872-3-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_5880-1789x1080-1.jpg",
+        "w": 1789,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_5901-2-1692x1080-1.jpg",
+        "w": 1692,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_5897-2-1620x1080-1.jpg",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "/images/2023/10/IMG_5914-1920x1071-1.jpg",
+        "w": 1920,
+        "h": 1071
+      }
     ]
   }
 ]
