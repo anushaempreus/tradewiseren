@@ -62,14 +62,13 @@ export default function Hero() {
       <div className="relative mx-auto w-full max-w-7xl px-4 py-28">
         <p className="eyebrow rise !text-brand">Welcome To</p>
         <AnimatedHeadline
-          className="mt-4 max-w-3xl text-5xl leading-[1.05] text-white md:text-7xl"
-          segments={[{ text: "Tradewise Renovations" }]}
+          className="mt-4 max-w-3xl text-5xl leading-[1.08] text-white md:text-7xl"
+          segments={[
+            { text: "Tradewise" },
+            { text: "Renovations", breakBefore: true },
+          ]}
         />
-        <p className="rise rise-2 mt-6 max-w-xl text-lg leading-relaxed text-gray-200">
-          Complete home renovation services across the Canberra region —
-          family owned and operated, with over 30 years of experience.
-        </p>
-        <div className="rise rise-3 mt-9 flex flex-wrap items-center gap-4">
+        <div className="rise rise-3 mt-10 flex flex-wrap items-center gap-4">
           <a
             href={PHONE_HREF}
             className="btn-sheen rounded-full bg-brand px-8 py-4 font-heading text-2xl text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-dark active:scale-95"

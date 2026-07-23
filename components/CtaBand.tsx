@@ -18,8 +18,9 @@ export default function CtaBand({
       <div className="absolute inset-0 bg-navy/80" />
       <div className="relative mx-auto max-w-3xl px-4">
         <Reveal>
-          <p className="eyebrow">Call Us Today</p>
-          <h2 className="mt-4 text-4xl leading-tight md:text-6xl">{heading}</h2>
+          {/* Original hierarchy: message as the small line, "Call Us Today" large */}
+          <p className="font-heading text-xl text-white/90 md:text-2xl">{heading}</p>
+          <h2 className="mt-4 text-4xl leading-tight md:text-6xl">Call Us Today</h2>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
               href={PHONE_HREF}

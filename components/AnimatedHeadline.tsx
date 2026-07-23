@@ -1,4 +1,4 @@
-type Segment = { text: string; brand?: boolean };
+type Segment = { text: string; brand?: boolean; breakBefore?: boolean };
 
 /**
  * Per-character masked swing-in headline, replicating the official site's
@@ -16,14 +16,17 @@ export default function AnimatedHeadline({
   baseDelay?: number;
   stagger?: number;
 }) {
-  const full = segments.map((s) => s.text).join("");
+  const full = segments
+    .map((s) => (s.breakBefore ? " " : "") + s.text)
+    .join("");
   let charIndex = 0;
 
   return (
     <h1 className={className} aria-label={full}>
       <span aria-hidden>
-        {segments.map((seg, si) =>
-          seg.text.split(/(\s+)/).map((word, wi) => {
+        {segments.map((seg, si) => [
+          seg.breakBefore ? <br key={`br-${si}`} /> : null,
+          ...seg.text.split(/(\s+)/).map((word, wi) => {
             if (/^\s+$/.test(word)) return " ";
             if (!word) return null;
             return (
@@ -39,8 +42,8 @@ export default function AnimatedHeadline({
                 ))}
               </span>
             );
-          })
-        )}
+          }),
+        ])}
       </span>
     </h1>
   );
